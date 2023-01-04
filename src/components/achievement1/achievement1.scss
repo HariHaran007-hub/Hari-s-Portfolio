@@ -1,0 +1,107 @@
+.achievement1{
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+            background-image: url('../../assets/img/color-sharp.png');
+    background-repeat: no-repeat;
+    object-fit: cover;
+   
+    h2{
+        margin: auto;
+        color: aquamarine;
+        text-align: center;
+
+    }
+
+    p{
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+    }
+    .achievement1Container{
+        display: flex;
+        flex-direction: row;
+        margin: 30px;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        
+        }
+    
+        
+        .left{
+            flex: 2.5;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .leftContainer{
+                padding: 50px;
+            }
+
+            &::before{
+                background-image: url('../../assets/img/banner-bg.png');
+
+            }
+           
+            background-image: url('../../assets/img/banner-bg.png');
+
+          
+            box-shadow: inset 20px 20px 20px rgba(0, 0, 0,0.05),
+            25px 35px 20px rgba(0, 0,0,0.05),
+            25px 20px 30px rgba(0, 0,0,0.05),
+            inset -20px -20px 25px rgba(255, 255, 255, 0.184)
+            ;
+
+            transition: 0.5s;
+            
+            animation: animatingBorder 5s infinite;
+            
+            align-items: center;
+            border-radius: 52% 48% 33% 67% / 38% 45% 55% 62% ;
+
+            &:hover{
+                border-radius: 50%;
+            }
+
+            h3{
+                color: aquamarine;
+                margin-top: 50px;
+                margin-right: 20px;
+                margin-left: 20px;
+                font-size: 20px;
+
+              
+            }
+
+            p{
+                padding-right: 30px;
+                padding-left: 30px;
+                font-size: 18px;
+                letter-spacing: 1px;
+
+                color: whitesmoke;
+                @media (max-width: 768px){
+                    font-size: 16px;
+    
+                }
+            }
+            
+        }
+
+        .right{
+            flex: 3;
+       
+            margin-left: 50px;
+            margin-top: 50px;
+            img{
+                height: 80%;
+                width:80%;
+                border-radius: 10%;    
+                object-fit: cover;
+                box-shadow: 9px 17px 40px -13px rgba(230, 31, 207, 0.4); 
+            }
+        }
+
+    }
+}

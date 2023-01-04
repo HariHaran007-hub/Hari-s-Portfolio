@@ -1,0 +1,86 @@
+.stack{
+    display: flex;
+    margin: auto;
+    margin-bottom: 50px;
+    background: #121212;
+    border-radius: 30px;
+    align-items: center;
+    width: max-content;
+
+    box-shadow: 15px 0px 73px 4px rgba(255, 5, 226, 0.61);
+    .stackContainer{
+        .text{
+            color: white;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-align: center;
+            padding: 20px;
+
+            @media (max-width: 768px){
+                font-size: 18px;
+                padding: 10px;
+                letter-spacing: 0.5px;
+                font-weight: 400;
+            }
+        }
+   
+        .techStackContainer{
+            display: grid;
+            gap: 50px;
+            align-items: center;
+            grid-template-columns: minmax(0, 3fr) minmax(0, 3fr) minmax(0, 3fr);
+
+            @media (max-width: 768px) {
+                display: grid;
+                gap: 1px;
+                margin: auto;
+                text-align: center;
+                grid-template-columns: minmax(0, 2fr) minmax(0, 2fr) minmax(0, 2fr)
+            }
+            .techStackItem{
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                text-align:center;         
+       
+                @media (max-width: 768px) {
+                     padding: 5px;
+                    
+                 }
+                img{
+                    height:120px;
+                    width: 120px;
+                    object-fit: cover;
+                    border-radius: 20%;  
+                    transition: 250ms; 
+
+                    @media (max-width: 768px) {
+                         height: 80px;
+                         width: 80px;
+                         margin: auto;
+                         border-radius: 50%;  
+                        
+                        
+
+                    }
+                }
+
+                &:hover{
+                    img{
+                       transform: scale(1.2); 
+                    }
+                }
+
+                span{
+                    padding: 10px;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    color: white;
+                   word-wrap: normal;
+                    
+                }
+            }
+        }
+    }
+}

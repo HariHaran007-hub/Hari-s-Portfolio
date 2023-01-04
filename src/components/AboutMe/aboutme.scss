@@ -1,0 +1,41 @@
+.aboutMe{
+    display: block;
+
+
+    .aboutMeContainer{
+        display: flex;
+ 
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        margin-right: 30px;
+        margin-left: 30px;
+        .left{
+        
+            img{
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                object-fit: cover;
+
+                @media (max-width: 768px) {
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+        }
+
+        .right{
+            padding-left: 30px;
+            font-size: 18px;
+            width: 50%;
+            @media (max-width: 768px) {
+            font-size: 12px;
+               
+            }
+            p{
+                color: whitesmoke;
+            }
+        }
+    }
+}

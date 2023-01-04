@@ -1,0 +1,15 @@
+.home{
+    overflow-x: hidden;
+    .homeContainer{
+	  
+    overflow-x: hidden;
+        
+        display: flex;
+        flex-direction: column;
+        .content{
+            margin-top: 80px;
+        }
+    }
+  
+
+}

@@ -5,9 +5,69 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#121212;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@keyframes updown {
+  0% {
+      transform: translateY(-20px);
+  }
+  50% {
+      transform: translateY(20px);
+  }
+  100% {
+      transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: -24px -8px 78px -45px  rgba(230, 31, 207, 0.61);
+
+  }
+  30%{
+    box-shadow: -24px -8px 96px -35px  rgba(230, 31, 207, 0.61);
+  }
+  70% {
+    box-shadow: -24px -8px 106px -24px  rgba(230, 31, 207, 0.61);
+
+  }
+  100% {
+    box-shadow: 1px -8px 78px -5px  rgba(230, 31, 207, 0.61);
+
+  }
+}
+
+@keyframes animatingBorder{
+
+  0%{
+    border-radius: 52% 48% 33% 67% / 38% 45% 55% 62% ;
+  }
+
+  30%{
+    border-radius: 51% 49% 59% 41% / 30% 64% 36% 70% ;
+  }
+
+  60%{
+    border-radius: 51% 49% 72% 28% / 30% 72% 28% 70% ;
+  }
+
+  80%{
+    border-radius: 65% 35% 58% 42% / 43% 53% 47% 57% ;
+  }
+
+  90%{
+    border-radius: 78% 22% 78% 22% / 34% 54% 46% 66% ;
+  }
+
+  100%{
+    border-radius: 52% 48% 33% 67% / 38% 45% 55% 62% ;
+  
+  }
+
 }
